@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:diagram="http://www.metamatrix.com/metamodels/Diagram" xmlns:mmcore="http://www.metamatrix.com/metamodels/Core" xmlns:mmws="http://www.metamatrix.com/metamodels/WebService" xmlns:transformation="http://www.metamatrix.com/metamodels/Transformation">
+  <mmcore:ModelAnnotation xmi:uuid="mmuuid:14dab9dc-5ee6-46a3-9704-a3ad6188c998" primaryMetamodelUri="http://www.metamatrix.com/metamodels/WebService" modelType="VIRTUAL" ProducerName="Teiid Designer" ProducerVersion="8.2.0.Alpha1-v20130606-1927-B2317">
+    <modelImports xmi:uuid="mmuuid:f4cd6ba4-60ad-4ce8-8d93-3517b897404d" name="books_Input" modelLocation="books_Input.xsd" modelType="TYPE" primaryMetamodelUri="http://www.eclipse.org/xsd/2002/XSD"/>
+    <modelImports xmi:uuid="mmuuid:a1527382-290f-4a7e-82a1-a2d5bc787ea2" name="books_Output" modelLocation="books_Output.xsd" modelType="TYPE" primaryMetamodelUri="http://www.eclipse.org/xsd/2002/XSD"/>
+    <modelImports xmi:uuid="mmuuid:53b08acb-d4f0-491e-b943-3b774cdc0b52" name="books_Output_View" modelLocation="books_Output_View.xmi" uuid="mmuuid:7999c3e3-71b4-45f9-ad51-d74955198cd6" modelType="VIRTUAL" primaryMetamodelUri="http://www.metamatrix.com/metamodels/XmlDocument"/>
+  </mmcore:ModelAnnotation>
+  <mmws:Interface xmi:uuid="mmuuid:8236e3ed-8c39-4505-9366-6911eab337ac" name="books_tb_affiliated_writers">
+    <operations xmi:uuid="mmuuid:27f804aa-36b5-4af8-8eb1-c4cf7a44eabb" name="gettb_affiliated_writers">
+      <input xmi:uuid="mmuuid:8d46c507-9bbd-4650-a9a4-6c50b4c0b033" name="tb_affiliated_writers_InputMsg">
+        <contentElement href="books_Input.xsd#//tb_affiliated_writers_Input;XSDElementDeclaration"/>
+      </input>
+      <output xmi:uuid="mmuuid:66b73285-e5be-40a3-aaad-03146b759c7d" name="tb_affiliated_writers_OutputMsg">
+        <contentElement href="books_Output.xsd#//tb_affiliated_writers_Output;XSDElementDeclaration"/>
+        <samples xmi:uuid="mmuuid:ce333ecc-de78-4a3e-86cf-7b0b22bb26db"/>
+        <xmlDocument href="books_Output_View.xmi#mmuuid/f43c9363-2c90-43f1-8b69-10d58ca96748"/>
+      </output>
+    </operations>
+  </mmws:Interface>
+  <mmws:Interface xmi:uuid="mmuuid:65367eac-b997-4dab-b75c-9b3e26d586de" name="books_tb_authors">
+    <operations xmi:uuid="mmuuid:1d8045ed-fcb2-4577-a881-30a8de6e55ac" name="gettb_authors">
+      <input xmi:uuid="mmuuid:3bcd7f86-bbf5-45da-a110-74c68f9c60ea" name="tb_authors_InputMsg">
+        <contentElement href="books_Input.xsd#//tb_authors_Input;XSDElementDeclaration=1"/>
+      </input>
+      <output xmi:uuid="mmuuid:8bddf1e8-2c61-4de1-98f9-4c7cfa5d880b" name="tb_authors_OutputMsg">
+        <contentElement href="books_Output.xsd#//tb_authors_Output;XSDElementDeclaration=1"/>
+        <samples xmi:uuid="mmuuid:aec30afe-7bed-42e7-af68-474a5394b0dd"/>
+        <xmlDocument href="books_Output_View.xmi#mmuuid/2f217301-7ef3-481d-a548-8941a8277a7e"/>
+      </output>
+    </operations>
+  </mmws:Interface>
+  <mmws:Interface xmi:uuid="mmuuid:30c2ebfa-3161-4095-930b-9ae302360304" name="books_tb_bk_gen">
+    <operations xmi:uuid="mmuuid:c14ba607-9581-47e6-90ec-8f0bf86be666" name="gettb_bk_gen">
+      <input xmi:uuid="mmuuid:6c54f01f-ab23-4848-aec6-9176d28226a0" name="tb_bk_gen_InputMsg">
+        <contentElement href="books_Input.xsd#//tb_bk_gen_Input;XSDElementDeclaration=2"/>
+      </input>
+      <output xmi:uuid="mmuuid:1ef6add8-7de3-4967-8668-249cdfcdacec" name="tb_bk_gen_OutputMsg">
+        <contentElement href="books_Output.xsd#//tb_bk_gen_Output;XSDElementDeclaration=2"/>
+        <samples xmi:uuid="mmuuid:5df228f4-9d5e-4da5-960d-44d30270518b"/>
+        <xmlDocument href="books_Output_View.xmi#mmuuid/6db6777a-ff2a-479c-8342-c806412a5cb3"/>
+      </output>
+    </operations>
+  </mmws:Interface>
+  <mmws:Interface xmi:uuid="mmuuid:3fe7251e-9f9d-4e1a-ba5f-3cf66db70874" name="books_tb_books">
+    <operations xmi:uuid="mmuuid:041c0f25-7e4c-4400-81ee-98fd93bf7f18" name="gettb_books">
+      <input xmi:uuid="mmuuid:3aa6c5a6-245b-4a01-b932-b84b240e5792" name="tb_books_InputMsg">
+        <contentElement href="books_Input.xsd#//tb_books_Input;XSDElementDeclaration=3"/>
+      </input>
+      <output xmi:uuid="mmuuid:0f45be9f-d7c9-40c1-a942-9ebb7cd209ec" name="tb_books_OutputMsg">
+        <contentElement href="books_Output.xsd#//tb_books_Output;XSDElementDeclaration=3"/>
+        <samples xmi:uuid="mmuuid:9d8614b6-c38a-42e5-adf2-8bd95a6442db"/>
+        <xmlDocument href="books_Output_View.xmi#mmuuid/3df82279-fe74-4a82-a10c-6895176ce3fb"/>
+      </output>
+    </operations>
+  </mmws:Interface>
+  <mmws:Interface xmi:uuid="mmuuid:9a5ff7e7-d21e-4c04-940c-ab8b94a89211" name="books_tb_edition">
+    <operations xmi:uuid="mmuuid:a2d8c86b-6e9e-4de1-8ee2-851713f0c39e" name="gettb_edition">
+      <input xmi:uuid="mmuuid:0c168def-6700-42cd-9774-d3cdd149dd0b" name="tb_edition_InputMsg">
+        <contentElement href="books_Input.xsd#//tb_edition_Input;XSDElementDeclaration=4"/>
+      </input>
+      <output xmi:uuid="mmuuid:eb6fb643-c4a5-48d1-9861-7811f9ce710c" name="tb_edition_OutputMsg">
+        <contentElement href="books_Output.xsd#//tb_edition_Output;XSDElementDeclaration=4"/>
+        <samples xmi:uuid="mmuuid:f36459b3-3568-4b92-9faf-0f16cfc19dc5"/>
+        <xmlDocument href="books_Output_View.xmi#mmuuid/74f1ffd5-4041-4853-9de9-03948b432676"/>
+      </output>
+    </operations>
+  </mmws:Interface>
+  <mmws:Interface xmi:uuid="mmuuid:e0244fb1-475f-4c31-b83d-675c2f23e48c" name="books_tb_editor">
+    <operations xmi:uuid="mmuuid:90f6b961-5656-4016-8342-1eb63ba11ff1" name="gettb_editor">
+      <input xmi:uuid="mmuuid:d40ee30f-e561-423f-a1f4-26fa43cde1f0" name="tb_editor_InputMsg">
+        <contentElement href="books_Input.xsd#//tb_editor_Input;XSDElementDeclaration=5"/>
+      </input>
+      <output xmi:uuid="mmuuid:0438c57c-f09c-4ed0-b7c5-36e6fc6390be" name="tb_editor_OutputMsg">
+        <contentElement href="books_Output.xsd#//tb_editor_Output;XSDElementDeclaration=5"/>
+        <samples xmi:uuid="mmuuid:c0f970c7-1262-4ccf-af0b-86e6ab907dd9"/>
+        <xmlDocument href="books_Output_View.xmi#mmuuid/93a807f7-fa33-4f9e-a047-fb9e5f977e95"/>
+      </output>
+    </operations>
+  </mmws:Interface>
+  <mmws:Interface xmi:uuid="mmuuid:cebe4af4-ecfc-4596-8199-423cec2cecf1" name="books_tb_emerge_authors">
+    <operations xmi:uuid="mmuuid:722d44b7-a1dc-4de5-8b9c-f14405f833de" name="gettb_emerge_authors">
+      <input xmi:uuid="mmuuid:5e242f9d-1720-43e2-ad53-6e75fd3a833c" name="tb_emerge_authors_InputMsg">
+        <contentElement href="books_Input.xsd#//tb_emerge_authors_Input;XSDElementDeclaration=6"/>
+      </input>
+      <output xmi:uuid="mmuuid:6ba07890-d38e-48a8-a18f-84accb2be234" name="tb_emerge_authors_OutputMsg">
+        <contentElement href="books_Output.xsd#//tb_emerge_authors_Output;XSDElementDeclaration=6"/>
+        <samples xmi:uuid="mmuuid:1ac33da0-94b7-4ea6-9d0f-473405e17838"/>
+        <xmlDocument href="books_Output_View.xmi#mmuuid/4165fc0b-ea93-4fc1-bbde-bc62f1e007e5"/>
+      </output>
+    </operations>
+  </mmws:Interface>
+  <mmws:Interface xmi:uuid="mmuuid:380cb9c9-8b58-40db-951f-2a2354cd584d" name="books_tb_on_prob_wr">
+    <operations xmi:uuid="mmuuid:73584fb0-c17e-4e4a-a93f-b06dcebdd6cf" name="gettb_on_prob_wr">
+      <input xmi:uuid="mmuuid:d14b4387-21f2-4180-b254-d8ffa4833639" name="tb_on_prob_wr_InputMsg">
+        <contentElement href="books_Input.xsd#//tb_on_prob_wr_Input;XSDElementDeclaration=7"/>
+      </input>
+      <output xmi:uuid="mmuuid:3b0087f8-47fa-4d5c-b9fd-fe95a0065eaf" name="tb_on_prob_wr_OutputMsg">
+        <contentElement href="books_Output.xsd#//tb_on_prob_wr_Output;XSDElementDeclaration=7"/>
+        <samples xmi:uuid="mmuuid:621a5a50-ef4f-43dd-83ed-144d942f1e1d"/>
+        <xmlDocument href="books_Output_View.xmi#mmuuid/e2d3b456-8ed5-4780-b01e-b704eb82c3ea"/>
+      </output>
+    </operations>
+  </mmws:Interface>
+  <transformation:TransformationContainer xmi:uuid="mmuuid:a49d2a5f-f774-4f73-a61e-1bf45d7f8c4b">
+    <transformationMappings xsi:type="transformation:SqlTransformationMappingRoot" xmi:uuid="mmuuid:a37d1e25-8f52-4eaa-a06d-14983dcede89" outputs="mmuuid/27f804aa-36b5-4af8-8eb1-c4cf7a44eabb" target="mmuuid/27f804aa-36b5-4af8-8eb1-c4cf7a44eabb">
+      <helper xsi:type="transformation:SqlTransformation" xmi:uuid="mmuuid:f9ddd967-4205-4caf-8ff8-06f42ae79f14">
+        <nested xsi:type="transformation:SqlTransformation" xmi:uuid="mmuuid:e0732d36-9d1c-4f90-b38d-d83a90e76fb0" selectSql="CREATE VIRTUAL PROCEDURE BEGIN DECLARE string VARIABLES.IN_WR_CODE;VARIABLES.IN_WR_CODE = xPathValue(books_WS.books_tb_affiliated_writers.gettb_affiliated_writers.tb_affiliated_writers_InputMsg, '/*:tb_affiliated_writers_Input/*:wr_code');SELECT * FROM books_Output_View.tb_affiliated_writers_OutputView WHERE  (books_Output_View.tb_affiliated_writers_OutputView.tb_affiliated_writers_Output.tb_affiliated_writers_Output_Instance.wr_code = convert(VARIABLES.IN_WR_CODE, integer)) ; END"/>
+      </helper>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:e5ff860a-d3c7-4173-949d-7ea0ce643fe9" outputs="mmuuid/ce333ecc-de78-4a3e-86cf-7b0b22bb26db"/>
+    </transformationMappings>
+    <transformationMappings xsi:type="transformation:SqlTransformationMappingRoot" xmi:uuid="mmuuid:bb04cf54-e8d2-4041-bdc6-9ff2036841e1" outputs="mmuuid/1d8045ed-fcb2-4577-a881-30a8de6e55ac" target="mmuuid/1d8045ed-fcb2-4577-a881-30a8de6e55ac">
+      <helper xsi:type="transformation:SqlTransformation" xmi:uuid="mmuuid:5265d159-bb9a-494f-ba24-30a22f2b4124">
+        <nested xsi:type="transformation:SqlTransformation" xmi:uuid="mmuuid:0ba47fdc-985c-44ae-ad98-828d96635db1" selectSql="CREATE VIRTUAL PROCEDURE BEGIN DECLARE string VARIABLES.IN_BK_CODE;DECLARE string VARIABLES.IN_WR_ID;VARIABLES.IN_BK_CODE = xPathValue(books_WS.books_tb_authors.gettb_authors.tb_authors_InputMsg, '/*:tb_authors_Input/*:bk_code');VARIABLES.IN_WR_ID = xPathValue(books_WS.books_tb_authors.gettb_authors.tb_authors_InputMsg, '/*:tb_authors_Input/*:wr_id');SELECT * FROM books_Output_View.tb_authors_OutputView WHERE  (books_Output_View.tb_authors_OutputView.tb_authors_Output.tb_authors_Output_Instance.bk_code = convert(VARIABLES.IN_BK_CODE, integer))  AND  (books_Output_View.tb_authors_OutputView.tb_authors_Output.tb_authors_Output_Instance.wr_id = convert(VARIABLES.IN_WR_ID, integer)) ; END"/>
+      </helper>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:b6132bb3-1986-40a0-8ef3-754e4b6019e9" outputs="mmuuid/aec30afe-7bed-42e7-af68-474a5394b0dd"/>
+    </transformationMappings>
+    <transformationMappings xsi:type="transformation:SqlTransformationMappingRoot" xmi:uuid="mmuuid:874020f3-820b-4264-9267-68fda217f69e" outputs="mmuuid/c14ba607-9581-47e6-90ec-8f0bf86be666" target="mmuuid/c14ba607-9581-47e6-90ec-8f0bf86be666">
+      <helper xsi:type="transformation:SqlTransformation" xmi:uuid="mmuuid:348a493b-2ebb-469b-91c8-ea35679bbdde">
+        <nested xsi:type="transformation:SqlTransformation" xmi:uuid="mmuuid:7728d3b1-e478-4f0a-bdd4-66302785e249" selectSql="CREATE VIRTUAL PROCEDURE BEGIN DECLARE string VARIABLES.IN_ID_BK;DECLARE string VARIABLES.IN_GEN_NAME;VARIABLES.IN_ID_BK = xPathValue(books_WS.books_tb_bk_gen.gettb_bk_gen.tb_bk_gen_InputMsg, '/*:tb_bk_gen_Input/*:id_bk');VARIABLES.IN_GEN_NAME = xPathValue(books_WS.books_tb_bk_gen.gettb_bk_gen.tb_bk_gen_InputMsg, '/*:tb_bk_gen_Input/*:gen_name');SELECT * FROM books_Output_View.tb_bk_gen_OutputView WHERE  (books_Output_View.tb_bk_gen_OutputView.tb_bk_gen_Output.tb_bk_gen_Output_Instance.id_bk = convert(VARIABLES.IN_ID_BK, integer))  AND  (books_Output_View.tb_bk_gen_OutputView.tb_bk_gen_Output.tb_bk_gen_Output_Instance.gen_name = VARIABLES.IN_GEN_NAME) ; END"/>
+      </helper>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:ccb94c4f-f5bd-48ef-bd07-db578a4acc3e" outputs="mmuuid/5df228f4-9d5e-4da5-960d-44d30270518b"/>
+    </transformationMappings>
+    <transformationMappings xsi:type="transformation:SqlTransformationMappingRoot" xmi:uuid="mmuuid:22d3370d-225d-4f84-9d78-e6149f34a30a" outputs="mmuuid/041c0f25-7e4c-4400-81ee-98fd93bf7f18" target="mmuuid/041c0f25-7e4c-4400-81ee-98fd93bf7f18">
+      <helper xsi:type="transformation:SqlTransformation" xmi:uuid="mmuuid:b28013fd-fe0f-46df-b444-066d3124dc73">
+        <nested xsi:type="transformation:SqlTransformation" xmi:uuid="mmuuid:5bc9c018-2525-4fe7-8afa-7d55057f493f" selectSql="CREATE VIRTUAL PROCEDURE BEGIN DECLARE string VARIABLES.IN_BK_CODE;VARIABLES.IN_BK_CODE = xPathValue(books_WS.books_tb_books.gettb_books.tb_books_InputMsg, '/*:tb_books_Input/*:bk_code');SELECT * FROM books_Output_View.tb_books_OutputView WHERE  (books_Output_View.tb_books_OutputView.tb_books_Output.tb_books_Output_Instance.bk_code = convert(VARIABLES.IN_BK_CODE, integer)) ; END"/>
+      </helper>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:abc71fcd-6239-42d9-bb38-47bd66922d58" outputs="mmuuid/9d8614b6-c38a-42e5-adf2-8bd95a6442db"/>
+    </transformationMappings>
+    <transformationMappings xsi:type="transformation:SqlTransformationMappingRoot" xmi:uuid="mmuuid:1ab1c566-1395-442a-85cc-0b3541b00613" outputs="mmuuid/a2d8c86b-6e9e-4de1-8ee2-851713f0c39e" target="mmuuid/a2d8c86b-6e9e-4de1-8ee2-851713f0c39e">
+      <helper xsi:type="transformation:SqlTransformation" xmi:uuid="mmuuid:b69d92f6-eaaf-4767-810c-edc7232b7260">
+        <nested xsi:type="transformation:SqlTransformation" xmi:uuid="mmuuid:475a297c-ad05-4629-bd9e-bc02155e5d2c" selectSql="CREATE VIRTUAL PROCEDURE BEGIN DECLARE string VARIABLES.IN_ED_CODE;VARIABLES.IN_ED_CODE = xPathValue(books_WS.books_tb_edition.gettb_edition.tb_edition_InputMsg, '/*:tb_edition_Input/*:ed_code');SELECT * FROM books_Output_View.tb_edition_OutputView WHERE  (books_Output_View.tb_edition_OutputView.tb_edition_Output.tb_edition_Output_Instance.ed_code = convert(VARIABLES.IN_ED_CODE, integer)) ; END"/>
+      </helper>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:3003d6bc-3bda-403d-a5be-4a48753764d6" outputs="mmuuid/f36459b3-3568-4b92-9faf-0f16cfc19dc5"/>
+    </transformationMappings>
+    <transformationMappings xsi:type="transformation:SqlTransformationMappingRoot" xmi:uuid="mmuuid:231914bd-d1f0-4e42-9407-646fcca6b6ba" outputs="mmuuid/90f6b961-5656-4016-8342-1eb63ba11ff1" target="mmuuid/90f6b961-5656-4016-8342-1eb63ba11ff1">
+      <helper xsi:type="transformation:SqlTransformation" xmi:uuid="mmuuid:25c05396-b168-4ef1-bf09-ce0e46fa24e5">
+        <nested xsi:type="transformation:SqlTransformation" xmi:uuid="mmuuid:61e79cb9-2d53-491f-bb69-ab293487904f" selectSql="CREATE VIRTUAL PROCEDURE BEGIN DECLARE string VARIABLES.IN_ED_CODE;VARIABLES.IN_ED_CODE = xPathValue(books_WS.books_tb_editor.gettb_editor.tb_editor_InputMsg, '/*:tb_editor_Input/*:ed_code');SELECT * FROM books_Output_View.tb_editor_OutputView WHERE  (books_Output_View.tb_editor_OutputView.tb_editor_Output.tb_editor_Output_Instance.ed_code = convert(VARIABLES.IN_ED_CODE, integer)) ; END"/>
+      </helper>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:3490f2b0-d4a6-4a06-8136-b82a8b8a6216" outputs="mmuuid/c0f970c7-1262-4ccf-af0b-86e6ab907dd9"/>
+    </transformationMappings>
+    <transformationMappings xsi:type="transformation:SqlTransformationMappingRoot" xmi:uuid="mmuuid:e8190294-bfb5-4edc-8e22-8296a1a5ef90" outputs="mmuuid/722d44b7-a1dc-4de5-8b9c-f14405f833de" target="mmuuid/722d44b7-a1dc-4de5-8b9c-f14405f833de">
+      <helper xsi:type="transformation:SqlTransformation" xmi:uuid="mmuuid:9e592161-20eb-42d9-809e-4e94d23190ce">
+        <nested xsi:type="transformation:SqlTransformation" xmi:uuid="mmuuid:b2557556-3c94-4542-9391-6a333edc9d67" selectSql="CREATE VIRTUAL PROCEDURE BEGIN DECLARE string VARIABLES.IN_BK_CODE;DECLARE string VARIABLES.IN_WR_ID;VARIABLES.IN_BK_CODE = xPathValue(books_WS.books_tb_emerge_authors.gettb_emerge_authors.tb_emerge_authors_InputMsg, '/*:tb_emerge_authors_Input/*:bk_code');VARIABLES.IN_WR_ID = xPathValue(books_WS.books_tb_emerge_authors.gettb_emerge_authors.tb_emerge_authors_InputMsg, '/*:tb_emerge_authors_Input/*:wr_id');SELECT * FROM books_Output_View.tb_emerge_authors_OutputView WHERE  (books_Output_View.tb_emerge_authors_OutputView.tb_emerge_authors_Output.tb_emerge_authors_Output_Instance.bk_code = convert(VARIABLES.IN_BK_CODE, integer))  AND  (books_Output_View.tb_emerge_authors_OutputView.tb_emerge_authors_Output.tb_emerge_authors_Output_Instance.wr_id = convert(VARIABLES.IN_WR_ID, integer)) ; END"/>
+      </helper>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:804602f7-5ff2-44c5-bdc9-6ebc11a19323" outputs="mmuuid/1ac33da0-94b7-4ea6-9d0f-473405e17838"/>
+    </transformationMappings>
+    <transformationMappings xsi:type="transformation:SqlTransformationMappingRoot" xmi:uuid="mmuuid:694c4251-6462-45b3-ae97-c85aed4eb4f6" outputs="mmuuid/73584fb0-c17e-4e4a-a93f-b06dcebdd6cf" target="mmuuid/73584fb0-c17e-4e4a-a93f-b06dcebdd6cf">
+      <helper xsi:type="transformation:SqlTransformation" xmi:uuid="mmuuid:c3b4e7bf-7f50-4fdd-bd55-930a57ca8320">
+        <nested xsi:type="transformation:SqlTransformation" xmi:uuid="mmuuid:1165c57b-ca1d-42fe-88ba-9cd2df711302" selectSql="CREATE VIRTUAL PROCEDURE BEGIN DECLARE string VARIABLES.IN_WR_CODE;VARIABLES.IN_WR_CODE = xPathValue(books_WS.books_tb_on_prob_wr.gettb_on_prob_wr.tb_on_prob_wr_InputMsg, '/*:tb_on_prob_wr_Input/*:wr_code');SELECT * FROM books_Output_View.tb_on_prob_wr_OutputView WHERE  (books_Output_View.tb_on_prob_wr_OutputView.tb_on_prob_wr_Output.tb_on_prob_wr_Output_Instance.wr_code = convert(VARIABLES.IN_WR_CODE, integer)) ; END"/>
+      </helper>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:0ac1030b-93f9-4219-95a8-550579a5c05b" outputs="mmuuid/621a5a50-ef4f-43dd-83ed-144d942f1e1d"/>
+    </transformationMappings>
+  </transformation:TransformationContainer>
+  <diagram:DiagramContainer xmi:uuid="mmuuid:a97da712-d6dd-4431-8d86-9300404f46b0">
+    <diagram xmi:uuid="mmuuid:1cf4a541-d262-42d0-bf68-b08a9ea47e63" type="packageDiagramType" target="mmuuid/14dab9dc-5ee6-46a3-9704-a3ad6188c998">
+      <diagramEntity xmi:uuid="mmuuid:e9209a20-bb15-4561-8eae-ecc049cb5d82" modelObject="mmuuid/8236e3ed-8c39-4505-9366-6911eab337ac" xPosition="10" yPosition="144"/>
+      <diagramEntity xmi:uuid="mmuuid:760fb3d5-9796-4e76-9378-a5284a6d9ce3" modelObject="mmuuid/65367eac-b997-4dab-b75c-9b3e26d586de" xPosition="420" yPosition="77"/>
+      <diagramEntity xmi:uuid="mmuuid:3858da01-b721-4cb4-8a97-0a57bbf8b391" modelObject="mmuuid/30c2ebfa-3161-4095-930b-9ae302360304" xPosition="420" yPosition="10"/>
+      <diagramEntity xmi:uuid="mmuuid:74151b3f-276d-424c-a293-ddd90a9367ea" modelObject="mmuuid/3fe7251e-9f9d-4e1a-ba5f-3cf66db70874" xPosition="10" yPosition="77"/>
+      <diagramEntity xmi:uuid="mmuuid:e5bec547-4b61-4e6c-8cf1-3c1293562057" modelObject="mmuuid/9a5ff7e7-d21e-4c04-940c-ab8b94a89211" xPosition="10" yPosition="10"/>
+      <diagramEntity xmi:uuid="mmuuid:c4b4fd2e-eaef-4247-82bb-0c5fe90e42ea" modelObject="mmuuid/e0244fb1-475f-4c31-b83d-675c2f23e48c" xPosition="215" yPosition="144"/>
+      <diagramEntity xmi:uuid="mmuuid:8ede8ed3-4a7d-428a-8659-f2fca8a7d8b3" modelObject="mmuuid/cebe4af4-ecfc-4596-8199-423cec2cecf1" xPosition="215" yPosition="77"/>
+      <diagramEntity xmi:uuid="mmuuid:0891099e-68ba-4f4a-bb7b-8f5f8b8965a2" modelObject="mmuuid/380cb9c9-8b58-40db-951f-2a2354cd584d" xPosition="215" yPosition="10"/>
+    </diagram>
+    <diagram xmi:uuid="mmuuid:87304d0b-9842-4efd-9dc0-3895e9068ce8" type="transformationDiagramType" target="mmuuid/1d8045ed-fcb2-4577-a881-30a8de6e55ac">
+      <diagramEntity xmi:uuid="mmuuid:4a6ef78a-b603-442e-bad9-6dc4552f3cfd" modelObject="mmuuid/1d8045ed-fcb2-4577-a881-30a8de6e55ac" xPosition="30" yPosition="50"/>
+      <diagramEntity xmi:uuid="mmuuid:c33d26fb-2112-4c55-879d-dbd978deb9e7" name="T" modelObject="mmuuid/bb04cf54-e8d2-4041-bdc6-9ff2036841e1" xPosition="263" yPosition="50"/>
+    </diagram>
+    <diagram xmi:uuid="mmuuid:6a2a1289-8b22-4365-ac43-74be4f3873aa" type="transformationDiagramType" target="mmuuid/c14ba607-9581-47e6-90ec-8f0bf86be666">
+      <diagramEntity xmi:uuid="mmuuid:a565694b-99c3-4aeb-986e-c928dcdb4eea" modelObject="mmuuid/c14ba607-9581-47e6-90ec-8f0bf86be666" xPosition="30" yPosition="50"/>
+      <diagramEntity xmi:uuid="mmuuid:358e3d6f-d4ba-4a23-8c46-c6df3bdfed95" name="T" modelObject="mmuuid/874020f3-820b-4264-9267-68fda217f69e" xPosition="261" yPosition="50"/>
+    </diagram>
+    <diagram xmi:uuid="mmuuid:1fdb112d-2804-437b-8a05-02cd24fd8d9e" type="transformationDiagramType" target="mmuuid/90f6b961-5656-4016-8342-1eb63ba11ff1">
+      <diagramEntity xmi:uuid="mmuuid:aeda60e4-a87b-4aef-9058-85af30c4ee36" modelObject="mmuuid/90f6b961-5656-4016-8342-1eb63ba11ff1" xPosition="30" yPosition="50"/>
+      <diagramEntity xmi:uuid="mmuuid:950859c3-7134-46d2-addb-a04bc9052e07" name="T" modelObject="mmuuid/231914bd-d1f0-4e42-9407-646fcca6b6ba" xPosition="255" yPosition="50"/>
+    </diagram>
+    <diagram xmi:uuid="mmuuid:b7745020-8dfd-44e0-a303-b030c93a3e4c" type="transformationDiagramType" target="mmuuid/a2d8c86b-6e9e-4de1-8ee2-851713f0c39e">
+      <diagramEntity xmi:uuid="mmuuid:bc953995-4ccf-40b1-9ba4-0bcbd86d8f5c" modelObject="mmuuid/a2d8c86b-6e9e-4de1-8ee2-851713f0c39e" xPosition="30" yPosition="50"/>
+      <diagramEntity xmi:uuid="mmuuid:68381f51-f8c4-493d-93e2-57c29d62d418" name="T" modelObject="mmuuid/1ab1c566-1395-442a-85cc-0b3541b00613" xPosition="260" yPosition="50"/>
+    </diagram>
+    <diagram xmi:uuid="mmuuid:92769068-2afb-4ee9-8b63-1add48450459" type="transformationDiagramType" target="mmuuid/041c0f25-7e4c-4400-81ee-98fd93bf7f18">
+      <diagramEntity xmi:uuid="mmuuid:a01f133c-cbea-44b7-9ad3-1666b937d245" modelObject="mmuuid/041c0f25-7e4c-4400-81ee-98fd93bf7f18" xPosition="30" yPosition="50"/>
+      <diagramEntity xmi:uuid="mmuuid:ba2d5cb8-9812-4008-a87d-0082ced207e6" name="T" modelObject="mmuuid/22d3370d-225d-4f84-9d78-e6149f34a30a" xPosition="254" yPosition="50"/>
+    </diagram>
+    <diagram xmi:uuid="mmuuid:15194019-762f-4422-b712-4a435e695dc7" type="transformationDiagramType" target="mmuuid/722d44b7-a1dc-4de5-8b9c-f14405f833de">
+      <diagramEntity xmi:uuid="mmuuid:c094b60a-ea2f-42bf-9f9a-1979719b0c22" modelObject="mmuuid/722d44b7-a1dc-4de5-8b9c-f14405f833de" xPosition="30" yPosition="50"/>
+      <diagramEntity xmi:uuid="mmuuid:0e62a7e0-b979-49e7-b4cd-d0b8622c4871" name="T" modelObject="mmuuid/e8190294-bfb5-4edc-8e22-8296a1a5ef90" xPosition="312" yPosition="50"/>
+    </diagram>
+    <diagram xmi:uuid="mmuuid:de0c5443-a383-4029-9550-28435b4b13da" type="transformationDiagramType" target="mmuuid/73584fb0-c17e-4e4a-a93f-b06dcebdd6cf">
+      <diagramEntity xmi:uuid="mmuuid:c1637c9a-8603-47b5-b9c9-9e63d70336e5" modelObject="mmuuid/73584fb0-c17e-4e4a-a93f-b06dcebdd6cf" xPosition="30" yPosition="50"/>
+      <diagramEntity xmi:uuid="mmuuid:fcd6e6f1-6ebc-4cc8-95c8-494097e179eb" name="T" modelObject="mmuuid/694c4251-6462-45b3-ae97-c85aed4eb4f6" xPosition="286" yPosition="50"/>
+    </diagram>
+  </diagram:DiagramContainer>
+</xmi:XMI>

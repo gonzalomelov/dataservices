@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xs:schema xmlns="http://www.metamatrix.com/tb_affiliated_writers_Input" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.metamatrix.com/tb_affiliated_writers_Input">
+  <xs:element name="tb_affiliated_writers_Input" type="tb_affiliated_writers_Input_Type"/>
+  <xs:complexType name="tb_affiliated_writers_Input_Type">
+    <xs:sequence>
+      <xs:element maxOccurs="1" minOccurs="0" name="wr_code" nillable="false" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="tb_authors_Input" type="tb_authors_Input_Type"/>
+  <xs:complexType name="tb_authors_Input_Type">
+    <xs:sequence>
+      <xs:element maxOccurs="1" minOccurs="0" name="bk_code" nillable="false" type="xs:int"/>
+      <xs:element maxOccurs="1" minOccurs="0" name="wr_id" nillable="false" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="tb_bk_gen_Input" type="tb_bk_gen_Input_Type"/>
+  <xs:complexType name="tb_bk_gen_Input_Type">
+    <xs:sequence>
+      <xs:element maxOccurs="1" minOccurs="0" name="id_bk" nillable="false" type="xs:int"/>
+      <xs:element maxOccurs="1" minOccurs="0" name="gen_name" nillable="false" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="tb_books_Input" type="tb_books_Input_Type"/>
+  <xs:complexType name="tb_books_Input_Type">
+    <xs:sequence>
+      <xs:element maxOccurs="1" minOccurs="0" name="bk_code" nillable="false" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="tb_edition_Input" type="tb_edition_Input_Type"/>
+  <xs:complexType name="tb_edition_Input_Type">
+    <xs:sequence>
+      <xs:element maxOccurs="1" minOccurs="0" name="ed_code" nillable="false" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="tb_editor_Input" type="tb_editor_Input_Type"/>
+  <xs:complexType name="tb_editor_Input_Type">
+    <xs:sequence>
+      <xs:element maxOccurs="1" minOccurs="0" name="ed_code" nillable="false" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="tb_emerge_authors_Input" type="tb_emerge_authors_Input_Type"/>
+  <xs:complexType name="tb_emerge_authors_Input_Type">
+    <xs:sequence>
+      <xs:element maxOccurs="1" minOccurs="0" name="bk_code" nillable="false" type="xs:int"/>
+      <xs:element maxOccurs="1" minOccurs="0" name="wr_id" nillable="false" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="tb_on_prob_wr_Input" type="tb_on_prob_wr_Input_Type"/>
+  <xs:complexType name="tb_on_prob_wr_Input_Type">
+    <xs:sequence>
+      <xs:element maxOccurs="1" minOccurs="0" name="wr_code" nillable="false" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mmcore="http://www.metamatrix.com/metamodels/Core" xmlns:transformation="http://www.metamatrix.com/metamodels/Transformation" xmlns:vxmldoc="http://www.metamatrix.com/metamodels/XmlDocument" xmlns:xsd="http://www.eclipse.org/xsd/2002/XSD">
+  <mmcore:ModelAnnotation xmi:uuid="mmuuid:7999c3e3-71b4-45f9-ad51-d74955198cd6" primaryMetamodelUri="http://www.metamatrix.com/metamodels/XmlDocument" modelType="VIRTUAL" ProducerName="Teiid Designer" ProducerVersion="8.2.0.Alpha1-v20130606-1927-B2317">
+    <modelImports xmi:uuid="mmuuid:2dbbb01a-062a-45b1-85bb-5cd3f42eb9b2" name="books_Output" modelLocation="books_Output.xsd" modelType="TYPE" primaryMetamodelUri="http://www.eclipse.org/xsd/2002/XSD"/>
+    <modelImports xmi:uuid="mmuuid:831703d6-7410-4fd6-89b2-4e9df89abdb0" name="XMLSchema" modelLocation="http://www.w3.org/2001/XMLSchema" modelType="TYPE" primaryMetamodelUri="http://www.eclipse.org/xsd/2002/XSD"/>
+    <modelImports xmi:uuid="mmuuid:9f62ac0a-ed65-462e-b609-481792c710f2" name="books" modelLocation="../sources/books.xmi" uuid="mmuuid:59a39c8f-91e2-4cd3-92bd-8e4cef0c296d" modelType="PHYSICAL" primaryMetamodelUri="http://www.metamatrix.com/metamodels/Relational"/>
+  </mmcore:ModelAnnotation>
+  <vxmldoc:XmlDocument xmi:uuid="mmuuid:f43c9363-2c90-43f1-8b69-10d58ca96748" name="tb_affiliated_writers_OutputView">
+    <root xmi:uuid="mmuuid:15dd1c83-a66c-44b2-a692-633c28334c3e" name="tb_affiliated_writers_Output" namespace="mmuuid/4a85e697-6a2f-43d6-8764-739b0313977e">
+      <xsdComponent xsi:type="xsd:XSDElementDeclaration" href="books_Output.xsd#//tb_affiliated_writers_Output;XSDElementDeclaration"/>
+      <entities xsi:type="vxmldoc:XmlSequence" xmi:uuid="mmuuid:da816cc7-c315-4278-bb7d-23a5de27fddf">
+        <entities xsi:type="vxmldoc:XmlElement" xmi:uuid="mmuuid:95aa4014-a71b-4fb1-a8d6-3ec908303104" name="tb_affiliated_writers_Output_Instance">
+          <xsdComponent xsi:type="xsd:XSDElementDeclaration" href="books_Output.xsd#//tb_affiliated_writers_Output;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle/tb_affiliated_writers_Output_Instance;XSDElementDeclaration"/>
+          <entities xsi:type="vxmldoc:XmlSequence" xmi:uuid="mmuuid:89fc716f-bd06-4a44-a380-74e9a8b74050">
+            <entities xsi:type="vxmldoc:XmlElement" xmi:uuid="mmuuid:8daa80b2-7bdc-47e1-8503-9c7e26d1371d" name="wr_code">
+              <xsdComponent xsi:type="xsd:XSDElementDeclaration" href="books_Output.xsd#//tb_affiliated_writers_Output_Type;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle/wr_code;XSDElementDeclaration"/>
+            </entities>
+            <entities xsi:type="vxmldoc:XmlElement" xmi:uuid="mmuuid:30948866-ea21-4623-92cc-85db610b6c4e" name="wr_name">
+              <xsdComponent xsi:type="xsd:XSDElementDeclaration" href="books_Output.xsd#//tb_affiliated_writers_Output_Type;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1/wr_name;XSDElementDeclaration"/>
+            </entities>
+            <xsdComponent xsi:type="xsd:XSDModelGroup" href="books_Output.xsd#//tb_affiliated_writers_Output_Type;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup"/>
+          </entities>
+        </entities>
+        <xsdComponent xsi:type="xsd:XSDModelGroup" href="books_Output.xsd#//tb_affiliated_writers_Output;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup"/>
+      </entities>
+      <declaredNamespaces xmi:uuid="mmuuid:4a85e697-6a2f-43d6-8764-739b0313977e" prefix="tb_affiliated_writers_Output" uri="http://www.metamatrix.com/tb_affiliated_writers_Output"/>
+      <declaredNamespaces xmi:uuid="mmuuid:8858c17f-1efc-45a2-a20a-8713504a7d03" prefix="xs" uri="http://www.w3.org/2001/XMLSchema"/>
+    </root>
+  </vxmldoc:XmlDocument>
+  <transformation:TransformationContainer xmi:uuid="mmuuid:885b45fc-53b2-4b1f-a2da-08c0269adf64">
+    <transformationMappings xsi:type="transformation:TreeMappingRoot" xmi:uuid="mmuuid:69564ad0-f3af-47cb-8a50-287ce17da195" inputs="mmuuid/3aebbd2c-645e-4625-8f76-c9d774b2207e" outputs="mmuuid/95aa4014-a71b-4fb1-a8d6-3ec908303104" target="mmuuid/f43c9363-2c90-43f1-8b69-10d58ca96748">
+      <nested xmi:uuid="mmuuid:7120e268-2d65-4e96-87ce-ccc01090f1f2" inputs="mmuuid/ed2c118c-56e0-4a9b-8769-db17d87da907" outputs="mmuuid/8daa80b2-7bdc-47e1-8503-9c7e26d1371d"/>
+      <nested xmi:uuid="mmuuid:d5edadb2-1891-45c4-a02a-de9c5d286a5d" inputs="mmuuid/9d5910b3-622c-4e98-be1c-d4591829f04f" outputs="mmuuid/30948866-ea21-4623-92cc-85db610b6c4e"/>
+    </transformationMappings>
+    <transformationMappings xsi:type="transformation:SqlTransformationMappingRoot" xmi:uuid="mmuuid:bb4424e2-745c-4474-a8ae-1384fcbe57b0" outputs="mmuuid/3aebbd2c-645e-4625-8f76-c9d774b2207e" target="mmuuid/3aebbd2c-645e-4625-8f76-c9d774b2207e">
+      <helper xsi:type="transformation:SqlTransformation" xmi:uuid="mmuuid:78a53a12-d07a-416a-926a-c895b5810a13">
+        <nested xsi:type="transformation:SqlTransformation" xmi:uuid="mmuuid:fb67d61e-7c75-4f60-8cf9-1515b35343e6" selectSql="SELECT * FROM books.tb_affiliated_writers"/>
+        <aliases xmi:uuid="mmuuid:c4fe25a6-6500-4dee-b315-02e7603aebee" alias="tb_affiliated_writers">
+          <aliasedObject href="../sources/books.xmi#mmuuid/ca12041d-d255-4704-85d4-edaabbd7ed76"/>
+        </aliases>
+      </helper>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:4f1784e4-6b63-47dd-896b-862e18e0c148" outputs="mmuuid/ed2c118c-56e0-4a9b-8769-db17d87da907">
+        <inputs href="../sources/books.xmi#mmuuid/dfe9e265-e5ac-4167-b617-e801a9ce5894"/>
+      </nested>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:d80408f0-8d9d-40c5-a4cf-4c05bd6a1bcc" outputs="mmuuid/9d5910b3-622c-4e98-be1c-d4591829f04f">
+        <inputs href="../sources/books.xmi#mmuuid/cd686429-990a-4377-a775-8d295430ee42"/>
+      </nested>
+      <inputs href="../sources/books.xmi#mmuuid/ca12041d-d255-4704-85d4-edaabbd7ed76"/>
+    </transformationMappings>
+    <transformationMappings xsi:type="transformation:TreeMappingRoot" xmi:uuid="mmuuid:230868bd-0d17-476a-8a80-7190d2216c0d" inputs="mmuuid/61ad2373-8843-4b93-9fa5-377f966bd7e0" outputs="mmuuid/7122bd6e-0022-4959-ab7d-88ba117ee28d" target="mmuuid/2f217301-7ef3-481d-a548-8941a8277a7e">
+      <nested xmi:uuid="mmuuid:896845d0-eaa7-4cc2-8871-f91fb56350b0" inputs="mmuuid/04aaf7ee-51f0-4c26-8f3b-910aaa590ff8" outputs="mmuuid/d73d1b83-4189-4d43-863c-6f502429aecc"/>
+      <nested xmi:uuid="mmuuid:4c1f3c26-9734-4d6c-b0a1-fa426cb9edd6" inputs="mmuuid/71643315-9e6f-41d2-b4c8-cb4ae38fcae5" outputs="mmuuid/0cda7fa5-bd09-46eb-8310-430bcef4a567"/>
+    </transformationMappings>
+    <transformationMappings xsi:type="transformation:SqlTransformationMappingRoot" xmi:uuid="mmuuid:d67aeaee-afbb-4c2e-8fee-cb8c0e06556b" outputs="mmuuid/61ad2373-8843-4b93-9fa5-377f966bd7e0" target="mmuuid/61ad2373-8843-4b93-9fa5-377f966bd7e0">
+      <helper xsi:type="transformation:SqlTransformation" xmi:uuid="mmuuid:b385f0f2-f94a-4702-9e93-465514b43559">
+        <nested xsi:type="transformation:SqlTransformation" xmi:uuid="mmuuid:5dbd87eb-4d06-4985-b0e4-5b15734e550e" selectSql="SELECT * FROM books.tb_authors"/>
+        <aliases xmi:uuid="mmuuid:1652a024-8502-4376-9f5e-e5769ea34053" alias="tb_authors">
+          <aliasedObject href="../sources/books.xmi#mmuuid/4b12e0d2-ccc4-46f3-af02-93a856bf1fd1"/>
+        </aliases>
+      </helper>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:df78e8c9-29cc-4a83-baed-6acbbac7c1c0" outputs="mmuuid/04aaf7ee-51f0-4c26-8f3b-910aaa590ff8">
+        <inputs href="../sources/books.xmi#mmuuid/edd89d08-f787-414d-929a-bc783f9f3e06"/>
+      </nested>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:d6254496-28d6-41e8-a577-6cc46f2f21eb" outputs="mmuuid/71643315-9e6f-41d2-b4c8-cb4ae38fcae5">
+        <inputs href="../sources/books.xmi#mmuuid/484e3890-1fbc-4db0-9033-1f17eaec898c"/>
+      </nested>
+      <inputs href="../sources/books.xmi#mmuuid/4b12e0d2-ccc4-46f3-af02-93a856bf1fd1"/>
+    </transformationMappings>
+    <transformationMappings xsi:type="transformation:TreeMappingRoot" xmi:uuid="mmuuid:306f9460-692c-460d-910f-6220a2e13b23" inputs="mmuuid/75e6931b-ed66-4984-af15-3699f9e39aa2" outputs="mmuuid/d9da1f12-b658-421f-b694-02c7005a11ff" target="mmuuid/6db6777a-ff2a-479c-8342-c806412a5cb3">
+      <nested xmi:uuid="mmuuid:9d5d832b-6ff9-4c23-9766-7ca8e133cc5b" inputs="mmuuid/8c118201-2503-44ad-8529-ab3343165623" outputs="mmuuid/bff92af4-c77a-4ba5-8f7c-1b3563effc6a"/>
+      <nested xmi:uuid="mmuuid:9f15c224-171d-4bde-a2eb-9cd8ef66b577" inputs="mmuuid/ec29223c-7fa0-4dbe-a403-b952fd15d82c" outputs="mmuuid/9c564c55-e92e-49b4-a226-ca1c0fedead2"/>
+    </transformationMappings>
+    <transformationMappings xsi:type="transformation:SqlTransformationMappingRoot" xmi:uuid="mmuuid:0ca441fe-4097-41ec-8b81-2e1dd32a32c7" outputs="mmuuid/75e6931b-ed66-4984-af15-3699f9e39aa2" target="mmuuid/75e6931b-ed66-4984-af15-3699f9e39aa2">
+      <helper xsi:type="transformation:SqlTransformation" xmi:uuid="mmuuid:c29066d0-b699-4022-ae23-bf5e7c140f7b">
+        <nested xsi:type="transformation:SqlTransformation" xmi:uuid="mmuuid:a1097598-9bd6-48d9-934f-1a39196c7864" selectSql="SELECT * FROM books.tb_bk_gen"/>
+        <aliases xmi:uuid="mmuuid:4760bc95-8808-4264-93bb-7183e1fb43e7" alias="tb_bk_gen">
+          <aliasedObject href="../sources/books.xmi#mmuuid/3e20fe1e-ea68-4afb-932d-face77052539"/>
+        </aliases>
+      </helper>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:86a72930-4c4e-4946-b372-2462f10a2442" outputs="mmuuid/8c118201-2503-44ad-8529-ab3343165623">
+        <inputs href="../sources/books.xmi#mmuuid/065fb49d-bea1-4543-ad8e-30ee6794006f"/>
+      </nested>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:c4a36828-55ab-4d61-912b-273c6ed6e1ae" outputs="mmuuid/ec29223c-7fa0-4dbe-a403-b952fd15d82c">
+        <inputs href="../sources/books.xmi#mmuuid/e6564f4e-a2fb-4ae6-979c-e4e4ca1a66ae"/>
+      </nested>
+      <inputs href="../sources/books.xmi#mmuuid/3e20fe1e-ea68-4afb-932d-face77052539"/>
+    </transformationMappings>
+    <transformationMappings xsi:type="transformation:TreeMappingRoot" xmi:uuid="mmuuid:85aa13d0-cca5-45db-8be7-b6d79d7f277e" inputs="mmuuid/199e7b1b-7c09-4b77-b0df-b2e3e4f79a82" outputs="mmuuid/dc60c986-5913-4b8f-ab48-aa2a45843f95" target="mmuuid/3df82279-fe74-4a82-a10c-6895176ce3fb">
+      <nested xmi:uuid="mmuuid:ececc8ec-532e-44ff-9ea8-a04e9252941a" inputs="mmuuid/86e9eb7f-74a1-4dcd-b427-fac4bf0bd181" outputs="mmuuid/2631fdf9-3602-435c-a4f3-6c61f268518a"/>
+      <nested xmi:uuid="mmuuid:970d0e9c-2412-4779-b84e-e9f54cea7159" inputs="mmuuid/5c92473c-da5a-4e4d-bf3b-ed3d9eaf2e5d" outputs="mmuuid/c217b116-a59e-4dde-831c-04f8b7fd67eb"/>
+      <nested xmi:uuid="mmuuid:5ecbf2a8-27ff-4f7d-88fc-16ae7f4d9df0" inputs="mmuuid/870e9420-3b04-4bca-82bd-d2711a7a6ad3" outputs="mmuuid/5b3b0c79-f714-4ef0-a1ed-e03bf6683284"/>
+    </transformationMappings>
+    <transformationMappings xsi:type="transformation:SqlTransformationMappingRoot" xmi:uuid="mmuuid:09aca86b-81c8-46c9-a6b9-53f5212b230a" outputs="mmuuid/199e7b1b-7c09-4b77-b0df-b2e3e4f79a82" target="mmuuid/199e7b1b-7c09-4b77-b0df-b2e3e4f79a82">
+      <helper xsi:type="transformation:SqlTransformation" xmi:uuid="mmuuid:2cad2376-1a75-4c4f-bbcb-eba611c45df0">
+        <nested xsi:type="transformation:SqlTransformation" xmi:uuid="mmuuid:11ebd4b9-53a2-4059-aa82-0cd535d81baa" selectSql="SELECT * FROM books.tb_books"/>
+        <aliases xmi:uuid="mmuuid:120685c2-fb12-4b28-ad07-ad44afe015fa" alias="tb_books">
+          <aliasedObject href="../sources/books.xmi#mmuuid/8ccf10f5-6030-4fef-b9c4-c1d96648ba73"/>
+        </aliases>
+      </helper>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:f7013eeb-3ab8-44ba-9d35-98aa80bff36b" outputs="mmuuid/86e9eb7f-74a1-4dcd-b427-fac4bf0bd181">
+        <inputs href="../sources/books.xmi#mmuuid/9be2f0b5-ad9c-4421-90c6-0e945b67fcb8"/>
+      </nested>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:c730ed60-c433-4cd4-872d-6cb8b0e842aa" outputs="mmuuid/5c92473c-da5a-4e4d-bf3b-ed3d9eaf2e5d">
+        <inputs href="../sources/books.xmi#mmuuid/dded031f-8834-4ef5-b27b-08b0d3b6e6ec"/>
+      </nested>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:57f3e8a3-1a41-4350-b936-a79d98426f99" outputs="mmuuid/870e9420-3b04-4bca-82bd-d2711a7a6ad3">
+        <inputs href="../sources/books.xmi#mmuuid/a65351c3-4fc1-4641-b5c0-4e06d67e79c3"/>
+      </nested>
+      <inputs href="../sources/books.xmi#mmuuid/8ccf10f5-6030-4fef-b9c4-c1d96648ba73"/>
+    </transformationMappings>
+    <transformationMappings xsi:type="transformation:TreeMappingRoot" xmi:uuid="mmuuid:df39d3e8-1c84-45d5-9569-053860472cc9" inputs="mmuuid/efad0d97-ad0b-4ee4-ad01-e532eedf3991" outputs="mmuuid/a26de093-d32c-4681-8b9a-adbfa30e6b59" target="mmuuid/74f1ffd5-4041-4853-9de9-03948b432676">
+      <nested xmi:uuid="mmuuid:3eb99b8a-5c39-4f65-bb41-b4aacfac84ad" inputs="mmuuid/27c55810-bdd2-4057-b4e5-28eb62698145" outputs="mmuuid/eb4c632c-c1b8-40be-9ac4-67c74af475b0"/>
+      <nested xmi:uuid="mmuuid:83c96f2f-38b8-4733-b02c-ab2927acdc3b" inputs="mmuuid/9ca709a1-564b-4e20-a34f-d62a96d80c1b" outputs="mmuuid/07e361db-0d09-4832-8b61-8d33c55ce871"/>
+      <nested xmi:uuid="mmuuid:057a40fc-d1fd-4d99-a3dc-0086c9966783" inputs="mmuuid/221fc10c-930b-4fe8-a63e-0f1165f05e86" outputs="mmuuid/7a7d38e1-fe43-48a9-b600-f630fdf4baf9"/>
+      <nested xmi:uuid="mmuuid:3e170f02-91a9-4727-b80a-5b9152b0386c" inputs="mmuuid/1fc9818f-056e-47ed-b8b8-02fb0d4686df" outputs="mmuuid/ef40df77-2200-4bcb-b113-3ed665956fc7"/>
+      <nested xmi:uuid="mmuuid:1c65989a-02ab-44e8-8c18-32271a58be20" inputs="mmuuid/fdb787ac-7551-48a2-b8cf-cda55f3373ee" outputs="mmuuid/e1518dc8-2938-41d7-bdee-e46ffad3b810"/>
+      <nested xmi:uuid="mmuuid:1647f863-3922-4529-afee-d788cb7fd400" inputs="mmuuid/2a63c04b-ea52-44c8-ad54-a7037f2be20c" outputs="mmuuid/3587bac2-9335-4f93-ac0d-5d559aacbce2"/>
+    </transformationMappings>
+    <transformationMappings xsi:type="transformation:SqlTransformationMappingRoot" xmi:uuid="mmuuid:ef89ec19-e3fb-4e9e-843a-e0b1ca3be807" outputs="mmuuid/efad0d97-ad0b-4ee4-ad01-e532eedf3991" target="mmuuid/efad0d97-ad0b-4ee4-ad01-e532eedf3991">
+      <helper xsi:type="transformation:SqlTransformation" xmi:uuid="mmuuid:535aadca-6d4c-4857-a5a1-fc20fa6be76d">
+        <nested xsi:type="transformation:SqlTransformation" xmi:uuid="mmuuid:b6254d0a-9c93-4911-ac5f-9d54a310ed21" selectSql="SELECT * FROM books.tb_edition"/>
+        <aliases xmi:uuid="mmuuid:27c7dbdb-488f-4448-971f-e77271e4456e" alias="tb_edition">
+          <aliasedObject href="../sources/books.xmi#mmuuid/5bf77f8a-696e-4c64-8e17-ac7d946988b1"/>
+        </aliases>
+      </helper>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:5caa6c3f-e1be-4f57-be0c-58f264efa4f6" outputs="mmuuid/27c55810-bdd2-4057-b4e5-28eb62698145">
+        <inputs href="../sources/books.xmi#mmuuid/34e28c7d-4bc5-4b67-b50a-742c28f09a20"/>
+      </nested>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:9b77865b-b309-4d91-bd88-1e2a82ff35cf" outputs="mmuuid/9ca709a1-564b-4e20-a34f-d62a96d80c1b">
+        <inputs href="../sources/books.xmi#mmuuid/190ab8d8-4b52-426e-bdcc-9bb67a815afe"/>
+      </nested>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:231341ad-bdd7-4569-a5ff-d163a6941736" outputs="mmuuid/221fc10c-930b-4fe8-a63e-0f1165f05e86">
+        <inputs href="../sources/books.xmi#mmuuid/60bf0d69-b81f-4441-a8a1-9558f9b053f5"/>
+      </nested>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:0464303d-a280-479c-9a9e-c374efa0a2d8" outputs="mmuuid/1fc9818f-056e-47ed-b8b8-02fb0d4686df">
+        <inputs href="../sources/books.xmi#mmuuid/9cbc0294-f027-4637-a097-fef7dc04c9a3"/>
+      </nested>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:5b39adf5-4095-4747-8a83-2ef9c1fea44a" outputs="mmuuid/fdb787ac-7551-48a2-b8cf-cda55f3373ee">
+        <inputs href="../sources/books.xmi#mmuuid/c3986529-d660-41c8-ad5b-46d648877183"/>
+      </nested>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:f047c4f0-6bf3-4155-8047-aedf087ec0a5" outputs="mmuuid/2a63c04b-ea52-44c8-ad54-a7037f2be20c">
+        <inputs href="../sources/books.xmi#mmuuid/898089b5-a233-41f3-9e68-0f3a4d33afcc"/>
+      </nested>
+      <inputs href="../sources/books.xmi#mmuuid/5bf77f8a-696e-4c64-8e17-ac7d946988b1"/>
+    </transformationMappings>
+    <transformationMappings xsi:type="transformation:TreeMappingRoot" xmi:uuid="mmuuid:ea0012ec-e9cb-4be7-8e25-545e0e2d3581" inputs="mmuuid/3f56cbd0-6829-4d4d-8805-44337dfd1a24" outputs="mmuuid/ff111d0c-8fbb-4460-a0e9-21beb5e8f230" target="mmuuid/93a807f7-fa33-4f9e-a047-fb9e5f977e95">
+      <nested xmi:uuid="mmuuid:4cd4afc0-b8f1-4060-b5ee-1157dc6c2138" inputs="mmuuid/ac491c9d-76af-4163-8c33-e4166b760d07" outputs="mmuuid/a1797d7e-ee0e-4a34-984e-5a621a6f045d"/>
+      <nested xmi:uuid="mmuuid:3c97b9e0-1ebd-465c-ad90-8fe880b77104" inputs="mmuuid/24d559a7-5e8b-4ac4-acb0-35dc13818988" outputs="mmuuid/80093faa-2dfb-43e1-92e8-0818e21b3401"/>
+    </transformationMappings>
+    <transformationMappings xsi:type="transformation:SqlTransformationMappingRoot" xmi:uuid="mmuuid:01986dbc-4045-4b5f-9da6-fc8b12072dd1" outputs="mmuuid/3f56cbd0-6829-4d4d-8805-44337dfd1a24" target="mmuuid/3f56cbd0-6829-4d4d-8805-44337dfd1a24">
+      <helper xsi:type="transformation:SqlTransformation" xmi:uuid="mmuuid:60a3a3cb-0352-458c-92c4-697e580afcce">
+        <nested xsi:type="transformation:SqlTransformation" xmi:uuid="mmuuid:9b7355db-4c34-4a1c-8ec3-f2ee14324ff3" selectSql="SELECT * FROM books.tb_editor"/>
+        <aliases xmi:uuid="mmuuid:3342e2de-0103-4ec1-9ad7-bd5c58326a88" alias="tb_editor">
+          <aliasedObject href="../sources/books.xmi#mmuuid/81bfec04-eddf-4c7d-a39e-5dd7ca00c5fb"/>
+        </aliases>
+      </helper>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:9c3c2858-4241-4cac-9c74-1fa287a5ee02" outputs="mmuuid/ac491c9d-76af-4163-8c33-e4166b760d07">
+        <inputs href="../sources/books.xmi#mmuuid/1b71d4bb-fcbe-4c22-a95f-66d5a36eddc2"/>
+      </nested>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:0d2198a0-39a0-43ac-9da1-eefc587e2087" outputs="mmuuid/24d559a7-5e8b-4ac4-acb0-35dc13818988">
+        <inputs href="../sources/books.xmi#mmuuid/96c3b5b5-dd50-41aa-8b02-085262485a9c"/>
+      </nested>
+      <inputs href="../sources/books.xmi#mmuuid/81bfec04-eddf-4c7d-a39e-5dd7ca00c5fb"/>
+    </transformationMappings>
+    <transformationMappings xsi:type="transformation:TreeMappingRoot" xmi:uuid="mmuuid:de18fd9d-4dd7-4c0e-b933-13185b12280b" inputs="mmuuid/e0166f32-16e1-4fbe-b274-7fda7c16e6fa" outputs="mmuuid/da33dec6-40b9-4753-930d-e474b9957936" target="mmuuid/4165fc0b-ea93-4fc1-bbde-bc62f1e007e5">
+      <nested xmi:uuid="mmuuid:7f4c6152-30ed-44d6-8bf4-b7e1c797cf01" inputs="mmuuid/f2ad0cf2-f6c5-46ed-8b7f-e5b9cbe4a17d" outputs="mmuuid/1b93c9aa-1ace-444b-b3c3-610027142ca8"/>
+      <nested xmi:uuid="mmuuid:f7dfd79c-459f-4e3a-aae0-298117eca2d0" inputs="mmuuid/fd58587b-0a83-47ad-84d2-2a4318a6df74" outputs="mmuuid/7264be88-fb36-4756-a2cf-49ab6cbdc06a"/>
+    </transformationMappings>
+    <transformationMappings xsi:type="transformation:SqlTransformationMappingRoot" xmi:uuid="mmuuid:c086cbeb-d682-4af7-a718-d38a5ebdbf5a" outputs="mmuuid/e0166f32-16e1-4fbe-b274-7fda7c16e6fa" target="mmuuid/e0166f32-16e1-4fbe-b274-7fda7c16e6fa">
+      <helper xsi:type="transformation:SqlTransformation" xmi:uuid="mmuuid:f9d3a6c8-1759-4600-be7f-3ea1337c7c79">
+        <nested xsi:type="transformation:SqlTransformation" xmi:uuid="mmuuid:3a76b923-a01a-4e6a-8342-2398321b05a0" selectSql="SELECT * FROM books.tb_emerge_authors"/>
+        <aliases xmi:uuid="mmuuid:f5599452-f300-4959-8e10-62f0951db8b6" alias="tb_emerge_authors">
+          <aliasedObject href="../sources/books.xmi#mmuuid/62af0e86-e4b5-4602-872f-018309f85bf8"/>
+        </aliases>
+      </helper>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:eb83adb4-a44a-42e3-a0a3-6c633a9fcb0e" outputs="mmuuid/f2ad0cf2-f6c5-46ed-8b7f-e5b9cbe4a17d">
+        <inputs href="../sources/books.xmi#mmuuid/02f36277-0b6c-4597-9d1a-4327d43a3e8c"/>
+      </nested>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:1b3e55a7-c51b-4ae2-b671-fdf7cc100ce7" outputs="mmuuid/fd58587b-0a83-47ad-84d2-2a4318a6df74">
+        <inputs href="../sources/books.xmi#mmuuid/61cfd4e8-8e8c-4ec2-931b-d803eabdd88f"/>
+      </nested>
+      <inputs href="../sources/books.xmi#mmuuid/62af0e86-e4b5-4602-872f-018309f85bf8"/>
+    </transformationMappings>
+    <transformationMappings xsi:type="transformation:TreeMappingRoot" xmi:uuid="mmuuid:e4f23349-24ad-4de3-af30-4ec0161342b7" inputs="mmuuid/2c277959-f9fc-4bb6-8a93-2ba8a625e612" outputs="mmuuid/2cc13d91-66fe-4fd4-988d-18bb985029fa" target="mmuuid/e2d3b456-8ed5-4780-b01e-b704eb82c3ea">
+      <nested xmi:uuid="mmuuid:e5767163-7e8c-494a-a8a0-9c0b7979bd8d" inputs="mmuuid/8d5c3c20-a532-4b96-9c77-7ec1dee55b3f" outputs="mmuuid/fb6d355e-a6ee-457a-9237-7f7b0771d946"/>
+      <nested xmi:uuid="mmuuid:2aaf33ce-7ddd-4f38-b6d2-9e2e2122ff64" inputs="mmuuid/d5926c1c-7d73-4682-90ee-2367516025c0" outputs="mmuuid/4be68b4c-0d26-4106-9904-d5189cc420c7"/>
+    </transformationMappings>
+    <transformationMappings xsi:type="transformation:SqlTransformationMappingRoot" xmi:uuid="mmuuid:24e324a3-7f68-48f8-bb1c-1a45314bb5cd" outputs="mmuuid/2c277959-f9fc-4bb6-8a93-2ba8a625e612" target="mmuuid/2c277959-f9fc-4bb6-8a93-2ba8a625e612">
+      <helper xsi:type="transformation:SqlTransformation" xmi:uuid="mmuuid:8ad90c76-b387-463b-8c57-7b887e3903af">
+        <nested xsi:type="transformation:SqlTransformation" xmi:uuid="mmuuid:b1347691-a1df-454b-9843-59f1ede9c1c3" selectSql="SELECT * FROM books.tb_on_prob_wr"/>
+        <aliases xmi:uuid="mmuuid:09131bad-ae37-48da-b7d8-473fe9dd8b4d" alias="tb_on_prob_wr">
+          <aliasedObject href="../sources/books.xmi#mmuuid/64e3fbe5-73f9-4a50-81d1-bbb9007c4efb"/>
+        </aliases>
+      </helper>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:2d7c8475-3ef3-4f4e-b5ef-d5d8f8da7923" outputs="mmuuid/8d5c3c20-a532-4b96-9c77-7ec1dee55b3f">
+        <inputs href="../sources/books.xmi#mmuuid/88262ad4-4433-43ed-86e0-9d572131d123"/>
+      </nested>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:7c7d76f1-674b-4aae-998c-6ba91f8f3f50" outputs="mmuuid/d5926c1c-7d73-4682-90ee-2367516025c0">
+        <inputs href="../sources/books.xmi#mmuuid/5bb5ac61-8a9c-46f1-911d-bc7c02759af7"/>
+      </nested>
+      <inputs href="../sources/books.xmi#mmuuid/64e3fbe5-73f9-4a50-81d1-bbb9007c4efb"/>
+    </transformationMappings>
+  </transformation:TransformationContainer>
+  <transformation:MappingClassSetContainer xmi:uuid="mmuuid:31a217e4-084a-4d4e-90c2-8d813c3295ef">
+    <mappingClassSets xmi:uuid="mmuuid:44c2e42b-413b-49cd-b33c-9b05c00a95a1" target="mmuuid/f43c9363-2c90-43f1-8b69-10d58ca96748">
+      <mappingClasses xmi:uuid="mmuuid:3aebbd2c-645e-4625-8f76-c9d774b2207e" name="tb_affiliated_writers_Output_Instance">
+        <columns xmi:uuid="mmuuid:ed2c118c-56e0-4a9b-8769-db17d87da907" name="wr_code">
+          <type href="http://www.w3.org/2001/XMLSchema#int"/>
+        </columns>
+        <columns xmi:uuid="mmuuid:9d5910b3-622c-4e98-be1c-d4591829f04f" name="wr_name">
+          <type href="http://www.w3.org/2001/XMLSchema#string"/>
+        </columns>
+        <inputSet xmi:uuid="mmuuid:22851cca-4969-4641-b09a-794d3f2bc5e5"/>
+      </mappingClasses>
+    </mappingClassSets>
+    <mappingClassSets xmi:uuid="mmuuid:1271147a-2935-4599-8dec-db06cae67447" target="mmuuid/2f217301-7ef3-481d-a548-8941a8277a7e">
+      <mappingClasses xmi:uuid="mmuuid:61ad2373-8843-4b93-9fa5-377f966bd7e0" name="tb_authors_Output_Instance">
+        <columns xmi:uuid="mmuuid:04aaf7ee-51f0-4c26-8f3b-910aaa590ff8" name="bk_code">
+          <type href="http://www.w3.org/2001/XMLSchema#int"/>
+        </columns>
+        <columns xmi:uuid="mmuuid:71643315-9e6f-41d2-b4c8-cb4ae38fcae5" name="wr_id">
+          <type href="http://www.w3.org/2001/XMLSchema#int"/>
+        </columns>
+        <inputSet xmi:uuid="mmuuid:c0f338d1-73a1-4ee2-9945-e0b7da1f0af8"/>
+      </mappingClasses>
+    </mappingClassSets>
+    <mappingClassSets xmi:uuid="mmuuid:e78b2b7c-af14-46d4-808a-000e918fc0be" target="mmuuid/6db6777a-ff2a-479c-8342-c806412a5cb3">
+      <mappingClasses xmi:uuid="mmuuid:75e6931b-ed66-4984-af15-3699f9e39aa2" name="tb_bk_gen_Output_Instance">
+        <columns xmi:uuid="mmuuid:8c118201-2503-44ad-8529-ab3343165623" name="id_bk">
+          <type href="http://www.w3.org/2001/XMLSchema#int"/>
+        </columns>
+        <columns xmi:uuid="mmuuid:ec29223c-7fa0-4dbe-a403-b952fd15d82c" name="gen_name">
+          <type href="http://www.w3.org/2001/XMLSchema#string"/>
+        </columns>
+        <inputSet xmi:uuid="mmuuid:988974cf-d98c-4a00-ab61-8b99c7d390b1"/>
+      </mappingClasses>
+    </mappingClassSets>
+    <mappingClassSets xmi:uuid="mmuuid:71907484-70df-4e11-8bd4-d3c76de5a846" target="mmuuid/3df82279-fe74-4a82-a10c-6895176ce3fb">
+      <mappingClasses xmi:uuid="mmuuid:199e7b1b-7c09-4b77-b0df-b2e3e4f79a82" name="tb_books_Output_Instance">
+        <columns xmi:uuid="mmuuid:86e9eb7f-74a1-4dcd-b427-fac4bf0bd181" name="bk_code">
+          <type href="http://www.w3.org/2001/XMLSchema#int"/>
+        </columns>
+        <columns xmi:uuid="mmuuid:5c92473c-da5a-4e4d-bf3b-ed3d9eaf2e5d" name="bk_title">
+          <type href="http://www.w3.org/2001/XMLSchema#string"/>
+        </columns>
+        <columns xmi:uuid="mmuuid:870e9420-3b04-4bca-82bd-d2711a7a6ad3" name="bk_type">
+          <type href="http://www.w3.org/2001/XMLSchema#string"/>
+        </columns>
+        <inputSet xmi:uuid="mmuuid:0cd0af6d-ccd3-4219-ab70-6b27ecbcdc52"/>
+      </mappingClasses>
+    </mappingClassSets>
+    <mappingClassSets xmi:uuid="mmuuid:3302c12d-201b-44ba-a91d-d63f45729337" target="mmuuid/74f1ffd5-4041-4853-9de9-03948b432676">
+      <mappingClasses xmi:uuid="mmuuid:efad0d97-ad0b-4ee4-ad01-e532eedf3991" name="tb_edition_Output_Instance">
+        <columns xmi:uuid="mmuuid:27c55810-bdd2-4057-b4e5-28eb62698145" name="ed_code">
+          <type href="http://www.w3.org/2001/XMLSchema#int"/>
+        </columns>
+        <columns xmi:uuid="mmuuid:9ca709a1-564b-4e20-a34f-d62a96d80c1b" name="ed_type">
+          <type href="http://www.w3.org/2001/XMLSchema#string"/>
+        </columns>
+        <columns xmi:uuid="mmuuid:221fc10c-930b-4fe8-a63e-0f1165f05e86" name="pub_date">
+          <type href="http://www.w3.org/2001/XMLSchema#date"/>
+        </columns>
+        <columns xmi:uuid="mmuuid:1fc9818f-056e-47ed-b8b8-02fb0d4686df" name="n_edt">
+          <type href="http://www.w3.org/2001/XMLSchema#int"/>
+        </columns>
+        <columns xmi:uuid="mmuuid:fdb787ac-7551-48a2-b8cf-cda55f3373ee" name="editor">
+          <type href="http://www.w3.org/2001/XMLSchema#int"/>
+        </columns>
+        <columns xmi:uuid="mmuuid:2a63c04b-ea52-44c8-ad54-a7037f2be20c" name="bk_id">
+          <type href="http://www.w3.org/2001/XMLSchema#int"/>
+        </columns>
+        <inputSet xmi:uuid="mmuuid:cf415d2e-e5c9-4308-b5a0-d723c433e043"/>
+      </mappingClasses>
+    </mappingClassSets>
+    <mappingClassSets xmi:uuid="mmuuid:b8f8372c-01f4-41c1-9631-7ccb6e873be8" target="mmuuid/93a807f7-fa33-4f9e-a047-fb9e5f977e95">
+      <mappingClasses xmi:uuid="mmuuid:3f56cbd0-6829-4d4d-8805-44337dfd1a24" name="tb_editor_Output_Instance">
+        <columns xmi:uuid="mmuuid:ac491c9d-76af-4163-8c33-e4166b760d07" name="ed_code">
+          <type href="http://www.w3.org/2001/XMLSchema#int"/>
+        </columns>
+        <columns xmi:uuid="mmuuid:24d559a7-5e8b-4ac4-acb0-35dc13818988" name="ed_name">
+          <type href="http://www.w3.org/2001/XMLSchema#string"/>
+        </columns>
+        <inputSet xmi:uuid="mmuuid:fad7a05e-cd05-431c-9866-ba0008773947"/>
+      </mappingClasses>
+    </mappingClassSets>
+    <mappingClassSets xmi:uuid="mmuuid:c34c47ba-16fe-4ac2-8127-fa0126e52946" target="mmuuid/4165fc0b-ea93-4fc1-bbde-bc62f1e007e5">
+      <mappingClasses xmi:uuid="mmuuid:e0166f32-16e1-4fbe-b274-7fda7c16e6fa" name="tb_emerge_authors_Output_Instance">
+        <columns xmi:uuid="mmuuid:f2ad0cf2-f6c5-46ed-8b7f-e5b9cbe4a17d" name="bk_code">
+          <type href="http://www.w3.org/2001/XMLSchema#int"/>
+        </columns>
+        <columns xmi:uuid="mmuuid:fd58587b-0a83-47ad-84d2-2a4318a6df74" name="wr_id">
+          <type href="http://www.w3.org/2001/XMLSchema#int"/>
+        </columns>
+        <inputSet xmi:uuid="mmuuid:39100eaa-d668-45b4-82f8-fec8929724f0"/>
+      </mappingClasses>
+    </mappingClassSets>
+    <mappingClassSets xmi:uuid="mmuuid:805f3725-c9e4-4c28-8f71-81160eaf4a96" target="mmuuid/e2d3b456-8ed5-4780-b01e-b704eb82c3ea">
+      <mappingClasses xmi:uuid="mmuuid:2c277959-f9fc-4bb6-8a93-2ba8a625e612" name="tb_on_prob_wr_Output_Instance">
+        <columns xmi:uuid="mmuuid:8d5c3c20-a532-4b96-9c77-7ec1dee55b3f" name="wr_code">
+          <type href="http://www.w3.org/2001/XMLSchema#int"/>
+        </columns>
+        <columns xmi:uuid="mmuuid:d5926c1c-7d73-4682-90ee-2367516025c0" name="wr_name">
+          <type href="http://www.w3.org/2001/XMLSchema#string"/>
+        </columns>
+        <inputSet xmi:uuid="mmuuid:cce1dcbd-e4e6-4eb7-8293-7bd92d67fd73"/>
+      </mappingClasses>
+    </mappingClassSets>
+  </transformation:MappingClassSetContainer>
+  <vxmldoc:XmlDocument xmi:uuid="mmuuid:2f217301-7ef3-481d-a548-8941a8277a7e" name="tb_authors_OutputView">
+    <root xmi:uuid="mmuuid:a3b905af-6165-4314-bdc6-cd61ef482a84" name="tb_authors_Output">
+      <xsdComponent xsi:type="xsd:XSDElementDeclaration" href="books_Output.xsd#//tb_authors_Output;XSDElementDeclaration=1"/>
+      <entities xsi:type="vxmldoc:XmlSequence" xmi:uuid="mmuuid:94ab3750-9c17-4bd8-84dd-d01368fd9772">
+        <entities xsi:type="vxmldoc:XmlElement" xmi:uuid="mmuuid:7122bd6e-0022-4959-ab7d-88ba117ee28d" name="tb_authors_Output_Instance">
+          <xsdComponent xsi:type="xsd:XSDElementDeclaration" href="books_Output.xsd#//tb_authors_Output;XSDElementDeclaration=1/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle/tb_authors_Output_Instance;XSDElementDeclaration"/>
+          <entities xsi:type="vxmldoc:XmlSequence" xmi:uuid="mmuuid:ca74f4e1-f7ad-4ce4-8a8f-69bd6708d4a3">
+            <entities xsi:type="vxmldoc:XmlElement" xmi:uuid="mmuuid:d73d1b83-4189-4d43-863c-6f502429aecc" name="bk_code">
+              <xsdComponent xsi:type="xsd:XSDElementDeclaration" href="books_Output.xsd#//tb_authors_Output_Type;XSDComplexTypeDefinition=1/XSDParticle/XSDModelGroup/XSDParticle/bk_code;XSDElementDeclaration"/>
+            </entities>
+            <entities xsi:type="vxmldoc:XmlElement" xmi:uuid="mmuuid:0cda7fa5-bd09-46eb-8310-430bcef4a567" name="wr_id">
+              <xsdComponent xsi:type="xsd:XSDElementDeclaration" href="books_Output.xsd#//tb_authors_Output_Type;XSDComplexTypeDefinition=1/XSDParticle/XSDModelGroup/XSDParticle=1/wr_id;XSDElementDeclaration"/>
+            </entities>
+            <xsdComponent xsi:type="xsd:XSDModelGroup" href="books_Output.xsd#//tb_authors_Output_Type;XSDComplexTypeDefinition=1/XSDParticle/XSDModelGroup"/>
+          </entities>
+        </entities>
+        <xsdComponent xsi:type="xsd:XSDModelGroup" href="books_Output.xsd#//tb_authors_Output;XSDElementDeclaration=1/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup"/>
+      </entities>
+      <declaredNamespaces xmi:uuid="mmuuid:eeb11261-7e88-48c1-b8ee-458315aba003" prefix="tb_affiliated_writers_Output" uri="http://www.metamatrix.com/tb_affiliated_writers_Output"/>
+    </root>
+  </vxmldoc:XmlDocument>
+  <vxmldoc:XmlDocument xmi:uuid="mmuuid:6db6777a-ff2a-479c-8342-c806412a5cb3" name="tb_bk_gen_OutputView">
+    <root xmi:uuid="mmuuid:59ec2b40-dc16-4f2a-82e3-36af7e3a69a4" name="tb_bk_gen_Output">
+      <xsdComponent xsi:type="xsd:XSDElementDeclaration" href="books_Output.xsd#//tb_bk_gen_Output;XSDElementDeclaration=2"/>
+      <entities xsi:type="vxmldoc:XmlSequence" xmi:uuid="mmuuid:c148175b-e032-45c3-9577-f3272dcedb04">
+        <entities xsi:type="vxmldoc:XmlElement" xmi:uuid="mmuuid:d9da1f12-b658-421f-b694-02c7005a11ff" name="tb_bk_gen_Output_Instance">
+          <xsdComponent xsi:type="xsd:XSDElementDeclaration" href="books_Output.xsd#//tb_bk_gen_Output;XSDElementDeclaration=2/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle/tb_bk_gen_Output_Instance;XSDElementDeclaration"/>
+          <entities xsi:type="vxmldoc:XmlSequence" xmi:uuid="mmuuid:cccd11ff-9e2f-4b58-b57f-8d7f8e656135">
+            <entities xsi:type="vxmldoc:XmlElement" xmi:uuid="mmuuid:bff92af4-c77a-4ba5-8f7c-1b3563effc6a" name="id_bk">
+              <xsdComponent xsi:type="xsd:XSDElementDeclaration" href="books_Output.xsd#//tb_bk_gen_Output_Type;XSDComplexTypeDefinition=2/XSDParticle/XSDModelGroup/XSDParticle/id_bk;XSDElementDeclaration"/>
+            </entities>
+            <entities xsi:type="vxmldoc:XmlElement" xmi:uuid="mmuuid:9c564c55-e92e-49b4-a226-ca1c0fedead2" name="gen_name">
+              <xsdComponent xsi:type="xsd:XSDElementDeclaration" href="books_Output.xsd#//tb_bk_gen_Output_Type;XSDComplexTypeDefinition=2/XSDParticle/XSDModelGroup/XSDParticle=1/gen_name;XSDElementDeclaration"/>
+            </entities>
+            <xsdComponent xsi:type="xsd:XSDModelGroup" href="books_Output.xsd#//tb_bk_gen_Output_Type;XSDComplexTypeDefinition=2/XSDParticle/XSDModelGroup"/>
+          </entities>
+        </entities>
+        <xsdComponent xsi:type="xsd:XSDModelGroup" href="books_Output.xsd#//tb_bk_gen_Output;XSDElementDeclaration=2/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup"/>
+      </entities>
+      <declaredNamespaces xmi:uuid="mmuuid:deb9f6a9-455f-4d40-b955-7723273c2083" prefix="tb_affiliated_writers_Output" uri="http://www.metamatrix.com/tb_affiliated_writers_Output"/>
+    </root>
+  </vxmldoc:XmlDocument>
+  <vxmldoc:XmlDocument xmi:uuid="mmuuid:3df82279-fe74-4a82-a10c-6895176ce3fb" name="tb_books_OutputView">
+    <root xmi:uuid="mmuuid:f5326f03-e88e-41f3-8a81-2afb18b14067" name="tb_books_Output">
+      <xsdComponent xsi:type="xsd:XSDElementDeclaration" href="books_Output.xsd#//tb_books_Output;XSDElementDeclaration=3"/>
+      <entities xsi:type="vxmldoc:XmlSequence" xmi:uuid="mmuuid:40c3c01a-ce03-46e6-b426-b588af424199">
+        <entities xsi:type="vxmldoc:XmlElement" xmi:uuid="mmuuid:dc60c986-5913-4b8f-ab48-aa2a45843f95" name="tb_books_Output_Instance">
+          <xsdComponent xsi:type="xsd:XSDElementDeclaration" href="books_Output.xsd#//tb_books_Output;XSDElementDeclaration=3/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle/tb_books_Output_Instance;XSDElementDeclaration"/>
+          <entities xsi:type="vxmldoc:XmlSequence" xmi:uuid="mmuuid:380c6e71-b65b-40ea-9455-3dabb49d344b">
+            <entities xsi:type="vxmldoc:XmlElement" xmi:uuid="mmuuid:2631fdf9-3602-435c-a4f3-6c61f268518a" name="bk_code">
+              <xsdComponent xsi:type="xsd:XSDElementDeclaration" href="books_Output.xsd#//tb_books_Output_Type;XSDComplexTypeDefinition=3/XSDParticle/XSDModelGroup/XSDParticle/bk_code;XSDElementDeclaration"/>
+            </entities>
+            <entities xsi:type="vxmldoc:XmlElement" xmi:uuid="mmuuid:c217b116-a59e-4dde-831c-04f8b7fd67eb" name="bk_title">
+              <xsdComponent xsi:type="xsd:XSDElementDeclaration" href="books_Output.xsd#//tb_books_Output_Type;XSDComplexTypeDefinition=3/XSDParticle/XSDModelGroup/XSDParticle=1/bk_title;XSDElementDeclaration"/>
+            </entities>
+            <entities xsi:type="vxmldoc:XmlElement" xmi:uuid="mmuuid:5b3b0c79-f714-4ef0-a1ed-e03bf6683284" name="bk_type">
+              <xsdComponent xsi:type="xsd:XSDElementDeclaration" href="books_Output.xsd#//tb_books_Output_Type;XSDComplexTypeDefinition=3/XSDParticle/XSDModelGroup/XSDParticle=2/bk_type;XSDElementDeclaration"/>
+            </entities>
+            <xsdComponent xsi:type="xsd:XSDModelGroup" href="books_Output.xsd#//tb_books_Output_Type;XSDComplexTypeDefinition=3/XSDParticle/XSDModelGroup"/>
+          </entities>
+        </entities>
+        <xsdComponent xsi:type="xsd:XSDModelGroup" href="books_Output.xsd#//tb_books_Output;XSDElementDeclaration=3/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup"/>
+      </entities>
+      <declaredNamespaces xmi:uuid="mmuuid:24409fad-d65b-407d-b7af-6bb35d77921a" prefix="tb_affiliated_writers_Output" uri="http://www.metamatrix.com/tb_affiliated_writers_Output"/>
+    </root>
+  </vxmldoc:XmlDocument>
+  <vxmldoc:XmlDocument xmi:uuid="mmuuid:74f1ffd5-4041-4853-9de9-03948b432676" name="tb_edition_OutputView">
+    <root xmi:uuid="mmuuid:7491f047-6540-40b3-9f82-506e78ff4ab3" name="tb_edition_Output">
+      <xsdComponent xsi:type="xsd:XSDElementDeclaration" href="books_Output.xsd#//tb_edition_Output;XSDElementDeclaration=4"/>
+      <entities xsi:type="vxmldoc:XmlSequence" xmi:uuid="mmuuid:cb4689a6-9074-4802-a5d2-47488dccc0aa">
+        <entities xsi:type="vxmldoc:XmlElement" xmi:uuid="mmuuid:a26de093-d32c-4681-8b9a-adbfa30e6b59" name="tb_edition_Output_Instance">
+          <xsdComponent xsi:type="xsd:XSDElementDeclaration" href="books_Output.xsd#//tb_edition_Output;XSDElementDeclaration=4/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle/tb_edition_Output_Instance;XSDElementDeclaration"/>
+          <entities xsi:type="vxmldoc:XmlSequence" xmi:uuid="mmuuid:7daafc1d-3497-44e5-a4b6-98c7ce429d37">
+            <entities xsi:type="vxmldoc:XmlElement" xmi:uuid="mmuuid:eb4c632c-c1b8-40be-9ac4-67c74af475b0" name="ed_code">
+              <xsdComponent xsi:type="xsd:XSDElementDeclaration" href="books_Output.xsd#//tb_edition_Output_Type;XSDComplexTypeDefinition=4/XSDParticle/XSDModelGroup/XSDParticle/ed_code;XSDElementDeclaration"/>
+            </entities>
+            <entities xsi:type="vxmldoc:XmlElement" xmi:uuid="mmuuid:07e361db-0d09-4832-8b61-8d33c55ce871" name="ed_type">
+              <xsdComponent xsi:type="xsd:XSDElementDeclaration" href="books_Output.xsd#//tb_edition_Output_Type;XSDComplexTypeDefinition=4/XSDParticle/XSDModelGroup/XSDParticle=1/ed_type;XSDElementDeclaration"/>
+            </entities>
+            <entities xsi:type="vxmldoc:XmlElement" xmi:uuid="mmuuid:7a7d38e1-fe43-48a9-b600-f630fdf4baf9" name="pub_date">
+              <xsdComponent xsi:type="xsd:XSDElementDeclaration" href="books_Output.xsd#//tb_edition_Output_Type;XSDComplexTypeDefinition=4/XSDParticle/XSDModelGroup/XSDParticle=2/pub_date;XSDElementDeclaration"/>
+            </entities>
+            <entities xsi:type="vxmldoc:XmlElement" xmi:uuid="mmuuid:ef40df77-2200-4bcb-b113-3ed665956fc7" name="n_edt">
+              <xsdComponent xsi:type="xsd:XSDElementDeclaration" href="books_Output.xsd#//tb_edition_Output_Type;XSDComplexTypeDefinition=4/XSDParticle/XSDModelGroup/XSDParticle=3/n_edt;XSDElementDeclaration"/>
+            </entities>
+            <entities xsi:type="vxmldoc:XmlElement" xmi:uuid="mmuuid:e1518dc8-2938-41d7-bdee-e46ffad3b810" name="editor">
+              <xsdComponent xsi:type="xsd:XSDElementDeclaration" href="books_Output.xsd#//tb_edition_Output_Type;XSDComplexTypeDefinition=4/XSDParticle/XSDModelGroup/XSDParticle=4/editor;XSDElementDeclaration"/>
+            </entities>
+            <entities xsi:type="vxmldoc:XmlElement" xmi:uuid="mmuuid:3587bac2-9335-4f93-ac0d-5d559aacbce2" name="bk_id">
+              <xsdComponent xsi:type="xsd:XSDElementDeclaration" href="books_Output.xsd#//tb_edition_Output_Type;XSDComplexTypeDefinition=4/XSDParticle/XSDModelGroup/XSDParticle=5/bk_id;XSDElementDeclaration"/>
+            </entities>
+            <xsdComponent xsi:type="xsd:XSDModelGroup" href="books_Output.xsd#//tb_edition_Output_Type;XSDComplexTypeDefinition=4/XSDParticle/XSDModelGroup"/>
+          </entities>
+        </entities>
+        <xsdComponent xsi:type="xsd:XSDModelGroup" href="books_Output.xsd#//tb_edition_Output;XSDElementDeclaration=4/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup"/>
+      </entities>
+      <declaredNamespaces xmi:uuid="mmuuid:5e50d91b-022c-43f6-a1cd-44b39bebe4de" prefix="tb_affiliated_writers_Output" uri="http://www.metamatrix.com/tb_affiliated_writers_Output"/>
+    </root>
+  </vxmldoc:XmlDocument>
+  <vxmldoc:XmlDocument xmi:uuid="mmuuid:93a807f7-fa33-4f9e-a047-fb9e5f977e95" name="tb_editor_OutputView">
+    <root xmi:uuid="mmuuid:582aa459-d351-4eb7-a85f-1061db4713a0" name="tb_editor_Output">
+      <xsdComponent xsi:type="xsd:XSDElementDeclaration" href="books_Output.xsd#//tb_editor_Output;XSDElementDeclaration=5"/>
+      <entities xsi:type="vxmldoc:XmlSequence" xmi:uuid="mmuuid:d0e9cbab-be93-43e6-90bb-1d3b993d7b3b">
+        <entities xsi:type="vxmldoc:XmlElement" xmi:uuid="mmuuid:ff111d0c-8fbb-4460-a0e9-21beb5e8f230" name="tb_editor_Output_Instance">
+          <xsdComponent xsi:type="xsd:XSDElementDeclaration" href="books_Output.xsd#//tb_editor_Output;XSDElementDeclaration=5/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle/tb_editor_Output_Instance;XSDElementDeclaration"/>
+          <entities xsi:type="vxmldoc:XmlSequence" xmi:uuid="mmuuid:f0bc3f0f-b6b8-4f89-b4ea-46f029720ea4">
+            <entities xsi:type="vxmldoc:XmlElement" xmi:uuid="mmuuid:a1797d7e-ee0e-4a34-984e-5a621a6f045d" name="ed_code">
+              <xsdComponent xsi:type="xsd:XSDElementDeclaration" href="books_Output.xsd#//tb_editor_Output_Type;XSDComplexTypeDefinition=5/XSDParticle/XSDModelGroup/XSDParticle/ed_code;XSDElementDeclaration"/>
+            </entities>
+            <entities xsi:type="vxmldoc:XmlElement" xmi:uuid="mmuuid:80093faa-2dfb-43e1-92e8-0818e21b3401" name="ed_name">
+              <xsdComponent xsi:type="xsd:XSDElementDeclaration" href="books_Output.xsd#//tb_editor_Output_Type;XSDComplexTypeDefinition=5/XSDParticle/XSDModelGroup/XSDParticle=1/ed_name;XSDElementDeclaration"/>
+            </entities>
+            <xsdComponent xsi:type="xsd:XSDModelGroup" href="books_Output.xsd#//tb_editor_Output_Type;XSDComplexTypeDefinition=5/XSDParticle/XSDModelGroup"/>
+          </entities>
+        </entities>
+        <xsdComponent xsi:type="xsd:XSDModelGroup" href="books_Output.xsd#//tb_editor_Output;XSDElementDeclaration=5/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup"/>
+      </entities>
+      <declaredNamespaces xmi:uuid="mmuuid:e408e90a-b71d-4ca2-9f35-970c23ad2f24" prefix="tb_affiliated_writers_Output" uri="http://www.metamatrix.com/tb_affiliated_writers_Output"/>
+    </root>
+  </vxmldoc:XmlDocument>
+  <vxmldoc:XmlDocument xmi:uuid="mmuuid:4165fc0b-ea93-4fc1-bbde-bc62f1e007e5" name="tb_emerge_authors_OutputView">
+    <root xmi:uuid="mmuuid:39404567-f351-4127-b5f5-04f15e8abcba" name="tb_emerge_authors_Output">
+      <xsdComponent xsi:type="xsd:XSDElementDeclaration" href="books_Output.xsd#//tb_emerge_authors_Output;XSDElementDeclaration=6"/>
+      <entities xsi:type="vxmldoc:XmlSequence" xmi:uuid="mmuuid:6dde3a1c-183f-416e-978f-46a229dd21a1">
+        <entities xsi:type="vxmldoc:XmlElement" xmi:uuid="mmuuid:da33dec6-40b9-4753-930d-e474b9957936" name="tb_emerge_authors_Output_Instance">
+          <xsdComponent xsi:type="xsd:XSDElementDeclaration" href="books_Output.xsd#//tb_emerge_authors_Output;XSDElementDeclaration=6/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle/tb_emerge_authors_Output_Instance;XSDElementDeclaration"/>
+          <entities xsi:type="vxmldoc:XmlSequence" xmi:uuid="mmuuid:ef3b1f55-ae02-47d0-9e03-948cf7910ae9">
+            <entities xsi:type="vxmldoc:XmlElement" xmi:uuid="mmuuid:1b93c9aa-1ace-444b-b3c3-610027142ca8" name="bk_code">
+              <xsdComponent xsi:type="xsd:XSDElementDeclaration" href="books_Output.xsd#//tb_emerge_authors_Output_Type;XSDComplexTypeDefinition=6/XSDParticle/XSDModelGroup/XSDParticle/bk_code;XSDElementDeclaration"/>
+            </entities>
+            <entities xsi:type="vxmldoc:XmlElement" xmi:uuid="mmuuid:7264be88-fb36-4756-a2cf-49ab6cbdc06a" name="wr_id">
+              <xsdComponent xsi:type="xsd:XSDElementDeclaration" href="books_Output.xsd#//tb_emerge_authors_Output_Type;XSDComplexTypeDefinition=6/XSDParticle/XSDModelGroup/XSDParticle=1/wr_id;XSDElementDeclaration"/>
+            </entities>
+            <xsdComponent xsi:type="xsd:XSDModelGroup" href="books_Output.xsd#//tb_emerge_authors_Output_Type;XSDComplexTypeDefinition=6/XSDParticle/XSDModelGroup"/>
+          </entities>
+        </entities>
+        <xsdComponent xsi:type="xsd:XSDModelGroup" href="books_Output.xsd#//tb_emerge_authors_Output;XSDElementDeclaration=6/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup"/>
+      </entities>
+      <declaredNamespaces xmi:uuid="mmuuid:394497c9-a389-4654-a184-1b416f5092c7" prefix="tb_affiliated_writers_Output" uri="http://www.metamatrix.com/tb_affiliated_writers_Output"/>
+    </root>
+  </vxmldoc:XmlDocument>
+  <vxmldoc:XmlDocument xmi:uuid="mmuuid:e2d3b456-8ed5-4780-b01e-b704eb82c3ea" name="tb_on_prob_wr_OutputView">
+    <root xmi:uuid="mmuuid:0279e1bc-ef90-4700-bcbb-9e96f6dcffdd" name="tb_on_prob_wr_Output">
+      <xsdComponent xsi:type="xsd:XSDElementDeclaration" href="books_Output.xsd#//tb_on_prob_wr_Output;XSDElementDeclaration=7"/>
+      <entities xsi:type="vxmldoc:XmlSequence" xmi:uuid="mmuuid:6f53360a-ddf2-405b-b036-28987bff8554">
+        <entities xsi:type="vxmldoc:XmlElement" xmi:uuid="mmuuid:2cc13d91-66fe-4fd4-988d-18bb985029fa" name="tb_on_prob_wr_Output_Instance">
+          <xsdComponent xsi:type="xsd:XSDElementDeclaration" href="books_Output.xsd#//tb_on_prob_wr_Output;XSDElementDeclaration=7/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle/tb_on_prob_wr_Output_Instance;XSDElementDeclaration"/>
+          <entities xsi:type="vxmldoc:XmlSequence" xmi:uuid="mmuuid:2efeafb0-ffaa-4168-9f05-a3e26d4ecef6">
+            <entities xsi:type="vxmldoc:XmlElement" xmi:uuid="mmuuid:fb6d355e-a6ee-457a-9237-7f7b0771d946" name="wr_code">
+              <xsdComponent xsi:type="xsd:XSDElementDeclaration" href="books_Output.xsd#//tb_on_prob_wr_Output_Type;XSDComplexTypeDefinition=7/XSDParticle/XSDModelGroup/XSDParticle/wr_code;XSDElementDeclaration"/>
+            </entities>
+            <entities xsi:type="vxmldoc:XmlElement" xmi:uuid="mmuuid:4be68b4c-0d26-4106-9904-d5189cc420c7" name="wr_name">
+              <xsdComponent xsi:type="xsd:XSDElementDeclaration" href="books_Output.xsd#//tb_on_prob_wr_Output_Type;XSDComplexTypeDefinition=7/XSDParticle/XSDModelGroup/XSDParticle=1/wr_name;XSDElementDeclaration"/>
+            </entities>
+            <xsdComponent xsi:type="xsd:XSDModelGroup" href="books_Output.xsd#//tb_on_prob_wr_Output_Type;XSDComplexTypeDefinition=7/XSDParticle/XSDModelGroup"/>
+          </entities>
+        </entities>
+        <xsdComponent xsi:type="xsd:XSDModelGroup" href="books_Output.xsd#//tb_on_prob_wr_Output;XSDElementDeclaration=7/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup"/>
+      </entities>
+      <declaredNamespaces xmi:uuid="mmuuid:8abfe53f-65f2-4844-b023-6a6c4d8ec6e6" prefix="tb_affiliated_writers_Output" uri="http://www.metamatrix.com/tb_affiliated_writers_Output"/>
+    </root>
+  </vxmldoc:XmlDocument>
+</xmi:XMI>
